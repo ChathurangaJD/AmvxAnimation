@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul Land Wiki</title>
+
+  
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/pf.jpg" type="image/jpg">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/soul.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @keyframes running-color-line {
+      0% { background-position: 0% 0; }
+      100% { background-position: 100% 0; }
+    }
+    
+    .running-color-title {
+      font-size: 1.5em;
+      background: linear-gradient(to right, indigo,black,gold, cyan,teal,white,indigo,black,gold,cyan,teal,white,indigo);
+      background-size: 200% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-align:center;
+      animation: running-color-line 3s linear infinite;
+    }
+      
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .moving-text {
+      white-space: nowrap;
+      animation: moveText 5s linear infinite;
+    }
+    
+    @keyframes moveText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .video-container iframe {
+      width: 560px;
+      height: 315px;
+    }
+    .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.column {
+  flex-basis: calc(33.33% - 20px);
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: crimson;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.card span {
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+
+.card .toggle-btn {
+ 
+  cursor: pointer;
+  color: cyan;
+}
+
+.slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .fade {
+      animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+  </style>
+</head>
+
+<body id="#top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      
+
+      <div class="header-actions">
+
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <div class="lang-wrapper">
+          <label for="language">
+            <ion-icon name="globe-outline"></ion-icon>
+          </label>
+        </div>
+         <a href="index.html">
+        <button class="btn btn-primary">Home</button>
+        <a>
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+         
+
+          <li>
+            <a href="articals.html" class="navbar-link">Wiki</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="navbar-link">About</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="https://chat.whatsapp.com/E51dzJTG5PZHA6ZlWHCCmX" class="navbar-social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/groups/276999254976575/?ref=share_group_link" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="https://www.youtube.com/@amvxmee" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+    </div>
+  </header>
+
+
+  
+       <div class="container">
+        
+
+        <div class="column">
+          <div class="card">
+            <img src="assets/images/ar6.jpg" alt="Article 1 Image">
+            <h2>Sun Moon Empire</h2>
+            <p>ඔබ දන්නවාද? | Do You Know?<br></br>
+
+              ❏ Soul Land 2 හි starluo අධිරාජ්‍යයට වඩා sun moon අධිරාජ්‍ය තාක්ෂණය අතින් ඉතා ඉහලින් සිටිනවා...
+              
+              <br>❏ මෙයට ප්‍රධාන හේතුවක් වන්නෙ ආත්ම උපකරණ නිෂ්පාදනය කිරීමට අවශ්‍ය වටිනා ලෝහ වර්ග වැඩියෙන් sun moon අධිරාජ්‍යයේ පැවතීමයි...</br>
+              
+              ❏ මීට අමතරව ඉහල මට්ටමේ ආත්ම උපකරණ නිර්මාණය කරන මිනිසුන් සිටින්නේද sun moo අධිරාජ්‍යයේය...
+              
+              <br>❏ ආත්ම උපකරණ තාක්ෂණය අතින් starluo අධිරාජ්‍යය සිටින්නේ බොහො පිටුපසින්‍ ය...</br>
+              
+              ❏ Shrek ඇකඩමියේ මුලසුන දරන level 99 ultimate duoluo පවසන ආකාරයට ඔහු sun moon අධිරාජ්‍යයයට ගිය විට ඔහුගේ ජීවිතයට පවා තර්ජනයක් එල්ල කළ හැකි උපකරණ ඔහු දැක තිබෙනවා...
+              
+              <br>❏ Starluo අධිරාජ්‍යය තාක්ෂණය අතින් මෙතරම් පසුපසින් සිටින්නේ බොහො පිරිස් ආත්ම උපකරණ නොසලකා හැරීමයි. මෙය tang sect එකේ විනාශයටද හේතු විය...</br>
+              
+              ❏ ඔවුන් තවමත් සිතන්නෙ ආත්ම මාස්ටර් වැනි බලවත් පුද්ගලයෙකු ආත්ම උපකරණ භාවිතයෙන් වැළැක්වීමට නොහැකි බවයි...
+              
+              <br>❏ මෙම නිසා ඔවුන් ආත්ම උපකරණ තාක්ෂණය දියුණු කිරීමට මැලි කමක් දක්වනු ලබයි...</br></p>
+            <span>RS 45 | April 15, 2024</span>
+            <button class="toggle-btn">Read</button>
+          </div>
+        </div>
+        
+        </div>
+
+      
+    <!-- #FOOTER-->
+  
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+       
+        </div>
+       <div class="divider"></div>
+        <body>
+          <h1 class="running-color-title">𝗔𝗺𝘃 𝗫 𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻</h1>
+          
+          <div class="container">
+            <I><h1 class="moving-text" style="color: white" style="font-size: 2px">  </h1></I>
+          </div>
+        </body>
+        
+
+        </div>
+
+      </div>
+    </div>
+
+
+    
+
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">chathurangaJD</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

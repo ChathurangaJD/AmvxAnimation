@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/pf.jpg" type="image/jpg">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/about.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @keyframes running-color-line {
+      0% { background-position: 0% 0; }
+      100% { background-position: 100% 0; }
+    }
+    
+    .running-color-title {
+      font-size: 1.5em;
+      background: linear-gradient(to right, indigo,black,gold, cyan,teal,white,indigo,black,gold,cyan,teal,white,indigo);
+      background-size: 200% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-align:center;
+      animation: running-color-line 3s linear infinite;
+    }
+      
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .moving-text {
+      white-space: nowrap;
+      animation: moveText 5s linear infinite;
+    }
+    
+    @keyframes moveText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .video-container iframe {
+      width: 560px;
+      height: 315px;
+    }
+
+    /* CSS styles can go here */
+    .crew-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .crew-member {
+        border: none;
+        padding: 20px;
+        text-align:center;
+        font-size: small;
+        font-family:'Calibri';
+        color: var(--citrine);
+        
+    }
+    .crew-member img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body id="#top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      
+
+      <div class="header-actions">
+
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+          <a href="#" title="search" class="search-btn"></a>
+        </button>
+
+        <div class="lang-wrapper">
+          <label for="language">
+            <ion-icon name="globe-outline"></ion-icon>
+          </label>
+        </div>
+         <a href="index.html">
+        <button class="btn btn-primary">Home</button>
+        <a>
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+
+          <li>
+            <a href="articals.html" class="navbar-link">wiki</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="navbar-link">About</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="https://chat.whatsapp.com/E51dzJTG5PZHA6ZlWHCCmX" class="navbar-social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/groups/276999254976575/?ref=share_group_link" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="https://www.youtube.com/@amvxmee" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+    <!-- #FOOTER-->
+  
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+    <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo">
+            <img src="" alt="">
+          </a>
+
+        </div>
+
+        <div class="divider"></div>
+        <div class="movie-detail-content">
+
+            <p class="detail-subtitle">About us</p>
+
+
+            
+            <p class="storyline">
+                Hi friends !💕
+                Meet @amv x Animation, the mastermind behind seamless subtitles that bring stories to life🍃. With a meticulous attention to detail and a deep understanding of language nuances, I ensure that every word is perfectly synchronized with the on-screen action. Armed with expertise in translation and a passion for storytelling, I bridge cultural gaps and make content accessible to global audiences🌏🫂. From movies and TV shows to online videos and educational materials, Our subtitles enhance the viewer experience and break down communication barriers. With a commitment to quality and creativity, I transform words into a visual masterpiece, making the world a more inclusive and connected place, one subtitle at a time.
+            </p>
+
+            
+          </div>
+
+          
+
+<div class="crew-container">
+    <div class="crew-member">
+        
+  <img src="../filmlane-master/assets/images/pf.jpg" alt="Jane Smith">
+  
+</div>
+</div>
+
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/groups/276999254976575/?ref=share_group_link" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://chat.whatsapp.com/E51dzJTG5PZHA6ZlWHCCmX" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/@amvxmee" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+        
+        <body>
+          <h1 class="running-color-title">𝗔𝗺𝘃 𝗫 𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻</h1>
+          
+          <div class="container">
+            <I><h1 class="moving-text" style="color: white" style="font-size: 2px">  </h1></I>
+          </div>
+        </body>
+        
+
+        </div>
+
+      </div>
+    </div>
+
+
+    
+
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">chathurangaJD</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
